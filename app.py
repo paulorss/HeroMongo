@@ -25,17 +25,17 @@ from newspaper import news_pool
 from googlesearch import search
 import wikipedia
 from time import sleep
-from logging import *
-import logging
+#from logging import *
+#import logging
 import urllib3
 import sys
-from chatterbot.adapters import Adapter
-from chatterbot.storage import StorageAdapter
-from chatterbot.search import IndexedTextSearch
-from chatterbot.conversation import Statement
+#from chatterbot.adapters import Adapter
+#from chatterbot.storage import StorageAdapter
+#from chatterbot.search import IndexedTextSearch
+#from chatterbot.conversation import Statement
 
 # logging.basicConfig(filename="Log_Test_File.txt", level=logging.INFO, filemode='a')
-logging.basicConfig(level=logging.INFO)
+#logging.basicConfig(level=logging.INFO)
 
 app = Flask(__name__)
 
@@ -72,7 +72,7 @@ conv = open('chat.txt', encoding="utf-8").readlines()
 trainer.train(conv)
 
 
-trainer.export_for_training('./export.json')
+#trainer.export_for_training('./export.json')
 
 
 @app.route("/")
