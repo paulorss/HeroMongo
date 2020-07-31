@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import unidecode
+#import unidecode
 #import time
 from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
